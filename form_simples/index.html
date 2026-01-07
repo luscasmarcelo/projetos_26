@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário</title>
 </head>
 <body>
-    
+    <section class="section-imagem">
+        <div class="logo-background">
+            <img src="imagens/law-office.png" alt="Company logo" class="logo">
+        </div>
+    </section>
+    <main class="login-section">
+        <h1>Comece Agora</h1>
+        <form action method="post" class="login-form">
+            <div class="form-row">
+                <div class="form-input">
+                    <label for="first-name">Nome</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-input">
+                    <label for="last-name">Sobrenome</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-input">
+                    <label for="phone-number">Telefone</label>
+                    <input type="tel" id="phone-number" name="phone-number" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-input">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-input">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+            <div class="form-input">
+                <button class="form-submit" type="submit">Cadastrar</button>
+            </div>
+        </form>
+        <p>Já possui uma conta? Faça <a href="#">login</a></p>
+    </main>
 </body>
 </html>
